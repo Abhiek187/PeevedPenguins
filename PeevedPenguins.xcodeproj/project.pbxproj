@@ -19,6 +19,9 @@
 		2501E19E1F0FC1AA000B0827 /* Bear.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2501E19D1F0FC1AA000B0827 /* Bear.sks */; };
 		2501E1A01F0FC3BC000B0827 /* CharacterActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2501E19F1F0FC3BC000B0827 /* CharacterActions.sks */; };
 		2501E1A21F0FC82C000B0827 /* Penguin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2501E1A11F0FC82C000B0827 /* Penguin.swift */; };
+		2501E1A41F0FCA9E000B0827 /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2501E1A31F0FCA9E000B0827 /* MainMenu.sks */; };
+		2501E1A61F0FCBC2000B0827 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2501E1A51F0FCBC2000B0827 /* MSButtonNode.swift */; };
+		2501E1A81F0FCC7A000B0827 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2501E1A71F0FCC7A000B0827 /* MainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		2501E19D1F0FC1AA000B0827 /* Bear.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Bear.sks; path = assets.atlas/Bear.sks; sourceTree = "<group>"; };
 		2501E19F1F0FC3BC000B0827 /* CharacterActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = CharacterActions.sks; path = ../CharacterActions.sks; sourceTree = "<group>"; };
 		2501E1A11F0FC82C000B0827 /* Penguin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Penguin.swift; sourceTree = "<group>"; };
+		2501E1A31F0FCA9E000B0827 /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
+		2501E1A51F0FCBC2000B0827 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MSButtonNode.swift; path = ../MSButtonNode.swift; sourceTree = "<group>"; };
+		2501E1A71F0FCC7A000B0827 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +86,10 @@
 				2501E1931F0FBD38000B0827 /* Info.plist */,
 				2501E19D1F0FC1AA000B0827 /* Bear.sks */,
 				2501E1A11F0FC82C000B0827 /* Penguin.swift */,
+				2501E1A31F0FCA9E000B0827 /* MainMenu.sks */,
+				2501E1A71F0FCC7A000B0827 /* MainMenu.swift */,
 				2501E19F1F0FC3BC000B0827 /* CharacterActions.sks */,
+				2501E1A51F0FCBC2000B0827 /* MSButtonNode.swift */,
 			);
 			path = PeevedPenguins;
 			sourceTree = "<group>";
@@ -145,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2501E19E1F0FC1AA000B0827 /* Bear.sks in Resources */,
+				2501E1A41F0FCA9E000B0827 /* MainMenu.sks in Resources */,
 				2501E1A01F0FC3BC000B0827 /* CharacterActions.sks in Resources */,
 				2501E18D1F0FBD38000B0827 /* Main.storyboard in Resources */,
 				2501E1841F0FBD38000B0827 /* GameScene.sks in Resources */,
@@ -163,9 +173,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2501E1881F0FBD38000B0827 /* GameScene.swift in Sources */,
+				2501E1A81F0FCC7A000B0827 /* MainMenu.swift in Sources */,
 				2501E18A1F0FBD38000B0827 /* GameViewController.swift in Sources */,
 				2501E1A21F0FC82C000B0827 /* Penguin.swift in Sources */,
 				2501E1821F0FBD38000B0827 /* AppDelegate.swift in Sources */,
+				2501E1A61F0FCBC2000B0827 /* MSButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
