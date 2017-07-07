@@ -18,6 +18,7 @@
 		2501E19A1F0FBDDA000B0827 /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2501E1991F0FBDDA000B0827 /* assets.atlas */; };
 		2501E19E1F0FC1AA000B0827 /* Bear.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2501E19D1F0FC1AA000B0827 /* Bear.sks */; };
 		2501E1A01F0FC3BC000B0827 /* CharacterActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2501E19F1F0FC3BC000B0827 /* CharacterActions.sks */; };
+		2501E1A21F0FC82C000B0827 /* Penguin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2501E1A11F0FC82C000B0827 /* Penguin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		2501E1991F0FBDDA000B0827 /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = assets.atlas; path = PeevedPenguins/assets.atlas; sourceTree = "<group>"; };
 		2501E19D1F0FC1AA000B0827 /* Bear.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Bear.sks; path = assets.atlas/Bear.sks; sourceTree = "<group>"; };
 		2501E19F1F0FC3BC000B0827 /* CharacterActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = CharacterActions.sks; path = ../CharacterActions.sks; sourceTree = "<group>"; };
+		2501E1A11F0FC82C000B0827 /* Penguin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Penguin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				2501E1901F0FBD38000B0827 /* LaunchScreen.storyboard */,
 				2501E1931F0FBD38000B0827 /* Info.plist */,
 				2501E19D1F0FC1AA000B0827 /* Bear.sks */,
+				2501E1A11F0FC82C000B0827 /* Penguin.swift */,
 				2501E19F1F0FC3BC000B0827 /* CharacterActions.sks */,
 			);
 			path = PeevedPenguins;
@@ -161,6 +164,7 @@
 			files = (
 				2501E1881F0FBD38000B0827 /* GameScene.swift in Sources */,
 				2501E18A1F0FBD38000B0827 /* GameViewController.swift in Sources */,
+				2501E1A21F0FC82C000B0827 /* Penguin.swift in Sources */,
 				2501E1821F0FBD38000B0827 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +327,7 @@
 				2501E1981F0FBD38000B0827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
