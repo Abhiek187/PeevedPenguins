@@ -15,6 +15,9 @@
 		2501E18D1F0FBD38000B0827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2501E18B1F0FBD38000B0827 /* Main.storyboard */; };
 		2501E18F1F0FBD38000B0827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2501E18E1F0FBD38000B0827 /* Assets.xcassets */; };
 		2501E1921F0FBD38000B0827 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2501E1901F0FBD38000B0827 /* LaunchScreen.storyboard */; };
+		2501E19A1F0FBDDA000B0827 /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2501E1991F0FBDDA000B0827 /* assets.atlas */; };
+		2501E19E1F0FC1AA000B0827 /* Bear.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2501E19D1F0FC1AA000B0827 /* Bear.sks */; };
+		2501E1A01F0FC3BC000B0827 /* CharacterActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2501E19F1F0FC3BC000B0827 /* CharacterActions.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		2501E18E1F0FBD38000B0827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2501E1911F0FBD38000B0827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2501E1931F0FBD38000B0827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2501E1991F0FBDDA000B0827 /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = assets.atlas; path = PeevedPenguins/assets.atlas; sourceTree = "<group>"; };
+		2501E19D1F0FC1AA000B0827 /* Bear.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Bear.sks; path = assets.atlas/Bear.sks; sourceTree = "<group>"; };
+		2501E19F1F0FC3BC000B0827 /* CharacterActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = CharacterActions.sks; path = ../CharacterActions.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,7 @@
 			children = (
 				2501E1801F0FBD38000B0827 /* PeevedPenguins */,
 				2501E17F1F0FBD38000B0827 /* Products */,
+				2501E1991F0FBDDA000B0827 /* assets.atlas */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +76,8 @@
 				2501E18E1F0FBD38000B0827 /* Assets.xcassets */,
 				2501E1901F0FBD38000B0827 /* LaunchScreen.storyboard */,
 				2501E1931F0FBD38000B0827 /* Info.plist */,
+				2501E19D1F0FC1AA000B0827 /* Bear.sks */,
+				2501E19F1F0FC3BC000B0827 /* CharacterActions.sks */,
 			);
 			path = PeevedPenguins;
 			sourceTree = "<group>";
@@ -132,8 +141,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2501E19E1F0FC1AA000B0827 /* Bear.sks in Resources */,
+				2501E1A01F0FC3BC000B0827 /* CharacterActions.sks in Resources */,
 				2501E18D1F0FBD38000B0827 /* Main.storyboard in Resources */,
 				2501E1841F0FBD38000B0827 /* GameScene.sks in Resources */,
+				2501E19A1F0FBDDA000B0827 /* assets.atlas in Resources */,
 				2501E18F1F0FBD38000B0827 /* Assets.xcassets in Resources */,
 				2501E1921F0FBD38000B0827 /* LaunchScreen.storyboard in Resources */,
 				2501E1861F0FBD38000B0827 /* Actions.sks in Resources */,
