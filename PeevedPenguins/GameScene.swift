@@ -141,6 +141,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func update(_ currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
         moveCamera()
+        checkPenguin()
     }
     
     /* Make a class method to load levels */
@@ -150,10 +151,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
         scene.scaleMode = .aspectFill
         return scene
-    }
-    
-    func clamp<T: Comparable>(value: T, lower: T, upper: T) -> T {
-        return min(max(value, lower), upper)
     }
     
     func moveCamera() {
@@ -210,5 +207,40 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         /* Play SFX */
         let sound = SKAction.playSoundFileNamed("sfx_seal", waitForCompletion: false)
         self.run(sound)
+    }
+    
+    func resetCamera() {
+        /* Reset camera */
+        let cameraReset = SKAction.move(to: CGPoint(x: 0, y: camera!.position.y), duration: 1.5)
+        let cameraDelay = SKAction.wait(forDuration: 0.5)
+        let cameraSequence = SKAction.sequence([cameraDelay, cameraReset])
+        cameraNode.run(cameraSequence)
+        cameraTarget = nil
+    }
+    
+    func checkPenguin() {
+        guard let cameraTarget = cameraTarget else {
+            return
+        }
+        
+        /* Check penguin has come to rest */
+        if cameraTarget.physicsBody!.joints.count == 0 && cameraTarget.physicsBody!.velocity.length() < 0.18 {
+            resetCamera()
+        }
+        
+        if cameraTarget.position.y < -200 {
+            cameraTarget.removeFromParent()
+            resetCamera()
+        }
+    }
+}
+
+func clamp<T: Comparable>(value: T, lower: T, upper: T) -> T {
+    return min(max(value, lower), upper)
+}
+
+extension CGVector {
+    public func length() -> CGFloat {
+        return CGFloat(sqrt(dx*dx + dy*dy))
     }
 }
