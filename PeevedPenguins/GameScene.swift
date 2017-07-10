@@ -54,7 +54,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 return
             }
             
-            scene.scaleMode = .aspectFill
+            scene.scaleMode = .aspectFit
             view.presentScene(scene)
         }
         
@@ -149,7 +149,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         guard let scene = GameScene(fileNamed: "Level_\(levelNumber)") else {
             return nil
         }
-        scene.scaleMode = .aspectFill
+        scene.scaleMode = .aspectFit
         return scene
     }
     
