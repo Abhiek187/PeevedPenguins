@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
     
     /* Define a var to hold the camera */
     var cameraNode: SKCameraNode!
@@ -57,6 +57,9 @@ class GameScene: SKScene {
             scene.scaleMode = .aspectFill
             view.presentScene(scene)
         }
+        
+        /* Set physics contact delegate */
+        physicsWorld.contactDelegate = self
         
         setupCatapult()
     }
@@ -160,5 +163,35 @@ class GameScene: SKScene {
         let targetX = cameraTarget.position.x
         let x = clamp(value: targetX, lower: 0, upper: 392)
         cameraNode.position.x = x
+    }
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        /* Physics contact delegate implementation */
+        /* Get references to the bodies involved in the collision */
+        let contactA: SKPhysicsBody = contact.bodyA
+        let contactB: SKPhysicsBody = contact.bodyB
+        /* Get references to the physics body parent SKSpriteNode */
+        let nodeA = contactA.node as! SKSpriteNode
+        let nodeB = contactB.node as! SKSpriteNode
+        /* Check if either physics bodies was a seal */
+        if contactA.categoryBitMask == 2 || contactB.categoryBitMask == 2 {
+            /* Was the collision more than a gentle nudge? */
+            if contact.collisionImpulse > 2.0 {
+                /* Kill seal */
+                if contactA.categoryBitMask == 2 { removeSeal(node: nodeA) }
+                if contactB.categoryBitMask == 2 { removeSeal(node: nodeB) }
+            }
+        }
+    }
+    
+    func removeSeal(node: SKNode) {
+        /* Seal death */
+        
+        /* Create our hero death action */
+        let sealDeath = SKAction.run({
+            /* Remove seal node from scene */
+            node.removeFromParent()
+        })
+        self.run(sealDeath)
     }
 }
