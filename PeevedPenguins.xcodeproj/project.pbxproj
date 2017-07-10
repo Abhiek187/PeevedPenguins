@@ -22,6 +22,8 @@
 		2501E1A41F0FCA9E000B0827 /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2501E1A31F0FCA9E000B0827 /* MainMenu.sks */; };
 		2501E1A61F0FCBC2000B0827 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2501E1A51F0FCBC2000B0827 /* MSButtonNode.swift */; };
 		2501E1A81F0FCC7A000B0827 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2501E1A71F0FCC7A000B0827 /* MainMenu.swift */; };
+		250887F91F13C82300F468C8 /* Poof.sks in Resources */ = {isa = PBXBuildFile; fileRef = 250887F81F13C82300F468C8 /* Poof.sks */; };
+		250887FF1F13CB6700F468C8 /* sfx_seal.caf in Resources */ = {isa = PBXBuildFile; fileRef = 250887FE1F13CB6700F468C8 /* sfx_seal.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		2501E1A31F0FCA9E000B0827 /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
 		2501E1A51F0FCBC2000B0827 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MSButtonNode.swift; path = ../MSButtonNode.swift; sourceTree = "<group>"; };
 		2501E1A71F0FCC7A000B0827 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		250887F81F13C82300F468C8 /* Poof.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Poof.sks; sourceTree = "<group>"; };
+		250887FE1F13CB6700F468C8 /* sfx_seal.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_seal.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 				2501E1801F0FBD38000B0827 /* PeevedPenguins */,
 				2501E17F1F0FBD38000B0827 /* Products */,
 				2501E1991F0FBDDA000B0827 /* assets.atlas */,
+				250887FD1F13CB6700F468C8 /* SFX */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +84,7 @@
 				2501E1831F0FBD38000B0827 /* Level_1.sks */,
 				2501E1851F0FBD38000B0827 /* Actions.sks */,
 				2501E1871F0FBD38000B0827 /* GameScene.swift */,
+				250887F81F13C82300F468C8 /* Poof.sks */,
 				2501E1891F0FBD38000B0827 /* GameViewController.swift */,
 				2501E18B1F0FBD38000B0827 /* Main.storyboard */,
 				2501E18E1F0FBD38000B0827 /* Assets.xcassets */,
@@ -92,6 +98,15 @@
 				2501E1A51F0FCBC2000B0827 /* MSButtonNode.swift */,
 			);
 			path = PeevedPenguins;
+			sourceTree = "<group>";
+		};
+		250887FD1F13CB6700F468C8 /* SFX */ = {
+			isa = PBXGroup;
+			children = (
+				250887FE1F13CB6700F468C8 /* sfx_seal.caf */,
+			);
+			name = SFX;
+			path = PeevedPenguins/assets.atlas/SFX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +172,10 @@
 				2501E19E1F0FC1AA000B0827 /* Bear.sks in Resources */,
 				2501E1A41F0FCA9E000B0827 /* MainMenu.sks in Resources */,
 				2501E1A01F0FC3BC000B0827 /* CharacterActions.sks in Resources */,
+				250887F91F13C82300F468C8 /* Poof.sks in Resources */,
 				2501E18D1F0FBD38000B0827 /* Main.storyboard in Resources */,
 				2501E1841F0FBD38000B0827 /* Level_1.sks in Resources */,
+				250887FF1F13CB6700F468C8 /* sfx_seal.caf in Resources */,
 				2501E19A1F0FBDDA000B0827 /* assets.atlas in Resources */,
 				2501E18F1F0FBD38000B0827 /* Assets.xcassets in Resources */,
 				2501E1921F0FBD38000B0827 /* LaunchScreen.storyboard in Resources */,

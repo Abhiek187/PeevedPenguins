@@ -185,6 +185,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func removeSeal(node: SKNode) {
+        /* Load our particle effect */
+        let particles = SKEmitterNode(fileNamed: "Poof")!
+        /* Position particles at the Seal node
+          If you've moved Seal to an sks, this will need to be
+          node.convert(node.position, to: self), not node.position */
+        particles.position = node.position
+        /* Add particles to the scene */
+        addChild(particles)
+        let wait = SKAction.wait(forDuration: 5)
+        let removeParticles = SKAction.removeFromParent()
+        let seq = SKAction.sequence([wait, removeParticles])
+        particles.run(seq)
+        
         /* Seal death */
         
         /* Create our hero death action */
@@ -193,5 +206,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             node.removeFromParent()
         })
         self.run(sealDeath)
+        
+        /* Play SFX */
+        let sound = SKAction.playSoundFileNamed("sfx_seal", waitForCompletion: false)
+        self.run(sound)
     }
 }
