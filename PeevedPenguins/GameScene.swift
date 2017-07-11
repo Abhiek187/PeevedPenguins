@@ -25,7 +25,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var touchNode: SKSpriteNode!
     
     /* UI connections */
-    var buttonRestart: MSButtonNode!
+    var buttonRestart1: MSButtonNode?
+    var buttonRestart2: MSButtonNode?
     
     /* Physics helpers */
     var touchJoint: SKPhysicsJointSpring?
@@ -45,12 +46,23 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         touchNode = childNode(withName: "touchNode") as! SKSpriteNode
         
         /* Set UI connections */
-        buttonRestart = childNode(withName: "//buttonRestart") as! MSButtonNode
+        buttonRestart1 = childNode(withName: "//buttonRestart1") as? MSButtonNode
+        buttonRestart2 = childNode(withName: "//buttonRestart2") as? MSButtonNode
         
         /* Reset the game when the reset button is tapped */
-        buttonRestart.selectedHandler = {
+        buttonRestart1?.selectedHandler = {
             guard let scene = GameScene.level(1) else {
                 print("Level 1 is missing?")
+                return
+            }
+            
+            scene.scaleMode = .aspectFit
+            view.presentScene(scene)
+        }
+        
+        buttonRestart2?.selectedHandler = {
+            guard let scene = GameScene.level(2) else {
+                print("Level 2 is missing?")
                 return
             }
             

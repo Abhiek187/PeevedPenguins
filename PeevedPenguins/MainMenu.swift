@@ -12,19 +12,25 @@ class MainMenu: SKScene {
     
     /* UI Connections */
     var buttonPlay: MSButtonNode!
+    var secretButton: MSButtonNode!
     
     override func didMove(to view: SKView) {
         /* Setup your scene here */
         
         /* Set UI connections */
         buttonPlay = self.childNode(withName: "buttonPlay") as! MSButtonNode
+        secretButton = self.childNode(withName: "secretButton") as! MSButtonNode
         
         buttonPlay.selectedHandler = {
-            self.loadGame()
+            self.loadGame(level: 1)
+        }
+        
+        secretButton.selectedHandler = {
+            self.loadGame(level: 2)
         }
     }
     
-    func loadGame() {
+    func loadGame(level: Int) {
         /* 1) Grab reference to our SpriteKit view */
         guard let skView = self.view as SKView! else {
             print("Cound not get SKview")
@@ -32,8 +38,8 @@ class MainMenu: SKScene {
         }
         
         /* 2) Load Game scene */
-        guard let scene = GameScene.level(1) else {
-            print("Could not load GameScene with level 1")
+        guard let scene = GameScene.level(level) else {
+            print("Could not load GameScene with level \(level)")
             return
         }
         

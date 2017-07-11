@@ -24,6 +24,7 @@
 		2501E1A81F0FCC7A000B0827 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2501E1A71F0FCC7A000B0827 /* MainMenu.swift */; };
 		250887F91F13C82300F468C8 /* Poof.sks in Resources */ = {isa = PBXBuildFile; fileRef = 250887F81F13C82300F468C8 /* Poof.sks */; };
 		250887FF1F13CB6700F468C8 /* sfx_seal.caf in Resources */ = {isa = PBXBuildFile; fileRef = 250887FE1F13CB6700F468C8 /* sfx_seal.caf */; };
+		250888831F143E6400F468C8 /* Level_2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 250888821F143E6400F468C8 /* Level_2.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		2501E1A71F0FCC7A000B0827 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MainMenu.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		250887F81F13C82300F468C8 /* Poof.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Poof.sks; sourceTree = "<group>"; };
 		250887FE1F13CB6700F468C8 /* sfx_seal.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_seal.caf; sourceTree = "<group>"; };
+		250888821F143E6400F468C8 /* Level_2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_2.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				2501E1811F0FBD38000B0827 /* AppDelegate.swift */,
 				2501E1831F0FBD38000B0827 /* Level_1.sks */,
+				250888821F143E6400F468C8 /* Level_2.sks */,
 				2501E1851F0FBD38000B0827 /* Actions.sks */,
 				2501E1871F0FBD38000B0827 /* GameScene.swift */,
 				250887F81F13C82300F468C8 /* Poof.sks */,
@@ -179,6 +182,7 @@
 				2501E19A1F0FBDDA000B0827 /* assets.atlas in Resources */,
 				2501E18F1F0FBD38000B0827 /* Assets.xcassets in Resources */,
 				2501E1921F0FBD38000B0827 /* LaunchScreen.storyboard in Resources */,
+				250888831F143E6400F468C8 /* Level_2.sks in Resources */,
 				2501E1861F0FBD38000B0827 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
