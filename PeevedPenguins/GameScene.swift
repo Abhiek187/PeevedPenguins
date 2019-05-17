@@ -34,16 +34,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func didMove(to view: SKView) {
         /* Create a new Camera */
-        cameraNode = childNode(withName: "cameraNode") as! SKCameraNode
+        cameraNode = childNode(withName: "cameraNode") as? SKCameraNode
         self.camera = cameraNode
         
-        catapult = childNode(withName: "catapult") as! SKSpriteNode
+        catapult = childNode(withName: "catapult") as? SKSpriteNode
         
         /* Set reference to catapultArm node */
-        catapultArm = childNode(withName: "catapultArm") as! SKSpriteNode
+        catapultArm = childNode(withName: "catapultArm") as? SKSpriteNode
         
-        cantileverNode = childNode(withName: "cantileverNode") as! SKSpriteNode
-        touchNode = childNode(withName: "touchNode") as! SKSpriteNode
+        cantileverNode = childNode(withName: "cantileverNode") as? SKSpriteNode
+        touchNode = childNode(withName: "touchNode") as? SKSpriteNode
         
         /* Set UI connections */
         buttonRestart1 = childNode(withName: "//buttonRestart1") as? MSButtonNode
